@@ -1,0 +1,12 @@
+Design Decisions: -
+I have used dropwizrd to create the rest webservice. With the dropwizard I have used jersey as a resource provider to serialization/de-serialization of json content.
+I have used the Concurrent list so that it is thread safe and if multiple requests come via the webserver it is thread safe.
+I have appropriately used singleton pattern to get the object of datastore so that there are not multiple objects, and all the threads refer to the same object.
+I have used interface and its implementation so that code can be enhanced in the future.
+Things which can be improved: -
+•	Major thing which can be improved is using spring framework for dependency injection. It was little convoluted to use spring with dropwizard but I feel I should be able to figure that out soon.
+•	I have not implemented any database. The assignment says that we should not consider ram to be infinite, but I thought I would use h2 database which is technically an in memory database as well. But the intention is that we can easily wire this to any DB and use JPA to query/insert the data.
+•	I have generated the key using the standard java library using a random secure number every time the server starts.
+•	I have skipped the setting up of logging part and I am using the standard console to print the exceptions.
+
+

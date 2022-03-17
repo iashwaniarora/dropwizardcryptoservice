@@ -1,0 +1,9 @@
+# No other configuration is being used by the application other than this.
+server:
+  applicationConnectors:
+    - type: http
+      port: 9000
+  adminConnectors:
+    - type: http
+      port: 9001
+

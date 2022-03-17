@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "b59aa3a3-f998-40f9-9901-e777c691cd51",
+		"name": "apple",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pushAndRelocate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/crypto/pushandrelocate?number=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"crypto",
+						"pushandrelocate"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pushRecalculateAndEncrypt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/crypto/pushrecalculateandencrypt?number=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"crypto",
+						"pushrecalculateandencrypt"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decrypt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/crypto/decrypt?encryptedText=w667edQfPOOOx3iWYmcWxA==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"crypto",
+						"decrypt"
+					],
+					"query": [
+						{
+							"key": "encryptedText",
+							"value": "w667edQfPOOOx3iWYmcWxA=="
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
